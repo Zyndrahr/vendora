@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+<listeners>
+		<listener class-name="com.vendora.utilities.Reporting" />
+	</listeners>
+
+
+  <test name="Test">
+  <parameter name="browser" value="chrome" />
+    <classes>
+    <class name="com.vendora.testcases.BaseClass"/>
+      <class name="com.vendora.testcases.TC_Login_001"/>
+        <class name="com.vendora.testcases.TC_LoginDDT_003"/>
+         <class name="com.vendora.testcases.TC_LoginAssertion_002"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
